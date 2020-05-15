@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>__TITLE__</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <script type="text/javascript" src="scripts/SCORM_API_wrapper.js"></script>
+    <script
+      type="text/javascript"
+      src="scripts/scormImplementation.js"
+    ></script>
+
+    <script src="scripts/main.js"></script>
+  </head>
+
+  <body>
+    <div role="main">
+      <h1>Hello, World!</h1>
+      <div class="question" role="container">
+        <label for="qName"
+          ><p>
+            What your name?
+          </p>
+        </label>
+        <textarea id="qName" class="answer"></textarea>
+      </div>
+      <hr />
+      <div class="question" role="container">
+        <label for="qCourse">
+          <p>
+            What your course?
+          </p>
+        </label>
+        <textarea id="qCourse" class="answer"></textarea>
+      </div>
+      <hr />
+
+      <div class="question" role="container">
+        <label for="q1">
+          <p>
+            What your beef?
+          </p>
+        </label>
+        <textarea id="q1" class="answer"></textarea>
+      </div>
+      <hr />
+
+      <button><strong>Submit Response</strong></button>
+    </div>
+    <script src="scripts/main.js"></script>
+    <script>
+      // Kick things off with the initialisePage function in main.js
+      window.addEventListener("load", initialisePage, false);
+    </script>
+  </body>
+</html>
